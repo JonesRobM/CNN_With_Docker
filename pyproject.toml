@@ -69,10 +69,7 @@ Repository = "https://github.com/yourusername/mnist-cnn-docker"
 Issues = "https://github.com/yourusername/mnist-cnn-docker/issues"
 
 [tool.setuptools]
-packages = ["mnist_cnn"]
-
-[tool.setuptools.package-data]
-mnist_cnn = ["py.typed"]
+py-modules = ["train_cnn", "predict_cnn"]
 
 [tool.pytest.ini_options]
 minversion = "7.0"
@@ -80,7 +77,7 @@ addopts = "-ra -q --strict-markers"
 testpaths = ["tests"]
 
 [tool.coverage.run]
-source = ["mnist_cnn"]
+source = ["train_cnn", "predict_cnn"]
 omit = ["tests/*", "setup.py"]
 
 [tool.coverage.report]

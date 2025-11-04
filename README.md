@@ -155,7 +155,7 @@ Optional:
 
 ## License
 
-MIT License - See LICENSE file for details
+Apache License - See LICENSE file for details
 
 ## Citation
 
@@ -166,6 +166,6 @@ If you use this project in your research, please cite:
   title={MNIST CNN Classification with Docker},
   author={MNIST CNN Project},
   year={2024},
-  url={https://github.com/yourusername/mnist-cnn-docker}
+  url={https://github.com/JonesRobM/mnist-cnn-docker}
 }
 ```
