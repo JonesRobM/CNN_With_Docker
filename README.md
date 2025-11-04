@@ -159,8 +159,6 @@ Apache License - See LICENSE file for details
 
 ## Citation
 
-If you use this project in your research, please cite:
-
 ```bibtex
 @software{mnist_cnn_docker,
   title={MNIST CNN Classification with Docker},
