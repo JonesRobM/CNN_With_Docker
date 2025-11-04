@@ -1,0 +1,43 @@
+# Include documentation
+include README.md
+include LICENSE
+include CLAUDE.md
+
+# Include configuration files
+include requirements.txt
+include pytest.ini
+include .coveragerc
+include setup.cfg
+include pyproject.toml
+
+# Include Docker files
+include Dockerfile
+include .dockerignore
+
+# Include test files
+recursive-include tests *.py
+include tests/README.md
+
+# Exclude compiled files
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude *.so
+global-exclude .DS_Store
+
+# Exclude version control
+global-exclude .git*
+
+# Exclude build artifacts
+global-exclude *.egg-info
+global-exclude .pytest_cache
+global-exclude .coverage
+global-exclude htmlcov
+
+# Exclude data and output directories
+prune data
+prune outputs
+prune htmlcov
+
+# Exclude model files
+global-exclude *.pt
+global-exclude *.pth
