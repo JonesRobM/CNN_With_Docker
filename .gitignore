@@ -14,6 +14,11 @@ dist/
 downloads/
 eggs/
 .eggs/
+claude/
+.claude/
+.claude/*
+CLAUDE*
+*claude*
 lib/
 lib64/
 parts/
@@ -205,3 +210,33 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Machine Learning / Deep Learning
+# Model files
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.joblib
+
+# Training outputs
+outputs/
+logs/
+runs/
+tensorboard/
+
+# Datasets
+data/
+datasets/
+*.csv
+*.tsv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+
+# Weights & Biases
+wandb/
